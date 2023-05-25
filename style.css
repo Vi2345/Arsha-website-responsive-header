@@ -9,12 +9,12 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 ::selection{
-    background-color: #ffe4c4;
-    color: #7fffd4;
+    background-color:#f5f5dc;
+    color:#ee82ee;
 }
 
 :root{
-    --main-color:#144283a4;
+    --main-color:#37517e;
     --primary-color:#000000;
     --secondary-color:#ffffff;
     --third-color:#87cfeb;
