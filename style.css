@@ -423,7 +423,7 @@ header{
 }
 
 
-@media (max-width:530px){
+@media (max-width:500px){
    
     .navlinks {
         background-color: var(--main-color);
