@@ -36,12 +36,17 @@
     
 }
 html{
-   
     scroll-behavior: smooth;
     scroll-padding-top: 10rem;
     overflow-x: hidden;
     
 }
+
+body{ 
+    overflow-x: hidden;  
+}
+
+
 
 
 
@@ -319,8 +324,106 @@ header{
     top: 5px;
 }
 
+.Polices-container{
+    background-color:#f3f5fa;
+    margin-top: 15%;
+}
 
-@media (max-width:576px){
+.Polices-container .sub-heading{
+    width: 40rem;
+    position: relative;
+    top: 70px;
+
+}
+
+.Polices-container .sub-heading h1{
+    font-size: 30px;
+    color:var(--main-color);
+    margin-bottom: 1rem;
+    font-family: var(--second-font-family);
+  
+}
+.Polices-container .sub-heading span{
+    color:#100655c7;
+    font-weight: bold;
+    font-family: var(--second-font-family);
+}
+.Polices-container .sub-heading p{
+    font-size: var(--p-font-size);
+    font-family: var(--second-font-family);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+.Polices-container .order-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 1.5rem;
+}
+.Polices-container .order-container .order #accordion{
+    margin-top: 10px;
+    width:600px;
+}
+
+ .Polices-container .order-container .order #accordion li{
+    width: 100%;
+    margin-bottom: 10px;
+    background-color:var(--secondary-color);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.Polices-container .order-container .order #accordion li label{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 0.5rem;
+    font-size:var(--main-font-size);
+    font-family: var(--second-font-family);
+    color: var(--third-color);
+    transition: max-height 0.5s;
+    
+}
+
+.Polices-container .order-container .order #accordion li .word p{
+    font-size: 16px;
+    font-family: var(--second-font-family);
+    font-weight: 400;
+    padding: 10px 10px;
+}
+
+.Polices-container .order-container .order #accordion li label i{
+    font-size:25px;
+    color: var(--primary-color);
+    
+  
+   
+}
+
+
+.Polices-container .order-container .order #accordion li label + input[type='radio']{
+    display: none;
+}
+.Polices-container .order-container .order #accordion li .word{
+    max-height: 0;
+   overflow: hidden;
+    transition: max-height 0.5s;
+    line-height: 1.5;
+}
+
+.Polices-container .order-container .order #accordion li label + input[type='radio']:checked + .word{
+    max-height: 400px;
+}
+
+.Polices-container .order-container .vector img{
+ width: 30rem;
+ height: 30rem;
+}
+
+
+@media (max-width:530px){
    
     .navlinks {
         background-color: var(--main-color);
@@ -466,6 +569,36 @@ header{
     .About-container .container .About-button{
         position: relative;
         top: 30px;
+    }
+
+    .Polices-container .sub-heading {
+        width: 24rem;
+     
+    }
+
+    .Polices-container .order-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .Polices-container .order-container .order #accordion{
+      width: 400px;
+      position: relative;
+      top: 60px;
+    }
+     
+  
+
+    .Polices-container .order-container .order #accordion li .word p{
+        display: flex;
+        width: 25rem;
+    }
+
+    .Polices-container .order-container .vector img{
+        width: 25rem;
     }
 }
  
