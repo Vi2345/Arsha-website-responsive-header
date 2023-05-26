@@ -423,7 +423,7 @@ header{
 }
 
 
-@media screen and (min-width:200px) and (max-width:767px){
+@media screen and (min-width:413px) and (max-width:767px){
    
     .navlinks {
         background-color: var(--main-color);
@@ -484,6 +484,7 @@ header{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         align-items: center;
+        justify-content: center;
        
        
        
@@ -492,7 +493,7 @@ header{
    .Home-container .Home .Home-text{
     text-align: center;
     position: relative;
-    top: 30%;
+    top: 40%;
     
 
     }
@@ -501,8 +502,8 @@ header{
         font-size: 35px;
         width: 20rem;
         position: relative;
-        left: 50px;
-    
+        left: 40px;
+       
     }
 
     
@@ -510,7 +511,7 @@ header{
   
     .Home-container .Home .Home-img img{
         position: relative;
-        top: 50px;
+        top: 70px;
         width: 26rem;
        
         
@@ -524,8 +525,8 @@ header{
     }
 
     .image-container .images img{
-        width: 30%;
-        height: 30%;
+        width: 35%;
+        height: 35%;
         padding: 10px;
        
     }
@@ -538,11 +539,14 @@ header{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         align-items: center;
+        text-align: left;
+       
        
     }
 
     .About-container .container .About-text h2{
-        width: 26rem;
+        display: flex;
+        width: 20rem;
     }
 
     .About-container .container .About-text i{
@@ -551,7 +555,7 @@ header{
     }
 
     .About-container .container .About-text p{
-        width: 27rem;
+        width: 20rem;
         display: flex;
         margin-bottom: 10px;
         line-height: 1.5;
@@ -563,7 +567,7 @@ header{
     .About-container .container .About-word h2{
          position: relative;
          top: 1px; 
-        width: 26rem;
+        width: 23rem;
     }
 
     .About-container .container .About-button{
@@ -571,9 +575,14 @@ header{
         top: 30px;
     }
 
-    .Polices-container .sub-heading {
-        width: 24rem;
+    .Polices-container .sub-heading h1 {
+        width: 23rem;
+       
      
+    }
+
+    .Polices-container .sub-heading p{
+        width: 23rem;
     }
 
     .Polices-container .order-container{
