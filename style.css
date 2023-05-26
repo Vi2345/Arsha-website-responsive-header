@@ -36,11 +36,13 @@
     
 }
 html{
+   
     scroll-behavior: smooth;
-    scroll-padding-top: 8rem;
+    scroll-padding-top: 10rem;
     overflow-x: hidden;
     
 }
+
 
 
 
@@ -142,13 +144,13 @@ header{
 }
 
 .Home-container .Home{
-    min-height: 45rem;
+    min-height:35rem;
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
     gap: 2rem;
     background-color: var(--main-color);
-    padding: 1rem 2rem;
+    padding: 15px 20px;
     
     
 }
@@ -210,8 +212,10 @@ header{
     display:flex;
     flex-direction: row;
     align-items: center;
-    gap: 3rem;
+    justify-content: center;
+    gap: 3.5rem;
     background-color:#f3f5fa;
+    padding: 10px 20px;
    
   
 
@@ -219,10 +223,9 @@ header{
 }
 
  .image-container .images img{
-    width: 13%;
-    height: 13%;
+    width: 7rem;
     filter: grayscale(10);
-    padding: 15px;
+    padding: 10px;
 
   
 
@@ -230,13 +233,12 @@ header{
 }
 
 
-.About-container{
-    margin-top: 18%;
-}
+
 
 .About-container .heading{
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 15%;
 }
  .About-container .heading h1{
     color: var(--main-color);
