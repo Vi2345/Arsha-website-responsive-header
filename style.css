@@ -223,13 +223,19 @@ header{
 }
 
  .image-container .images img{
-    width: 7rem;
+    width: 8rem;
     filter: grayscale(10);
     padding: 10px;
 
   
 
 
+}
+
+.image-container .images img:hover{
+    filter: none;
+    transform: scale(1.2) translateY(5px);
+    transition: 0.5s all ease;
 }
 
 
@@ -383,7 +389,7 @@ header{
    .Home-container .Home .Home-text{
     text-align: center;
     position: relative;
-    top: 25%;
+    top: 28%;
     
 
     }
