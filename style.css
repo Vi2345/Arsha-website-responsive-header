@@ -32,11 +32,12 @@
 .align{
     max-width: 1200px;
     margin: auto;
+    padding:0 3rem;
     
 }
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: 10rem;
+    scroll-padding-top: 8rem;
     overflow-x: hidden;
     
 }
@@ -205,6 +206,109 @@ header{
     
 }
 
+.image-container .images{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    background-color:#f3f5fa;
+   
+  
+
+  
+}
+
+ .image-container .images img{
+    width: 13%;
+    height: 13%;
+    filter: grayscale(10);
+    padding: 15px;
+
+  
+
+
+}
+
+
+.About-container{
+    margin-top: 18%;
+}
+
+.About-container .heading{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+ .About-container .heading h1{
+    color: var(--main-color);
+    font-size: var(--h1-font-size);
+    font-family: var(--second-font-family);
+    font-weight: bold;
+}
+
+.About-container .heading h1:after{
+    content: "";
+    width: 10%;
+    height: 3px;
+    margin: auto;
+    display: block;
+    background-color: var(--main-color);
+    position: relative;
+    top: 5px;
+}
+
+.About-container .container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1.5rem;
+    align-items: center;
+ 
+}
+
+.About-container .container .About-text h2{
+ color: var(--primary-color);
+ font-size: var(--main-font-size);
+ font-family:var(--second-font-family) ;
+ font-weight:400;
+ width: 40rem;
+ margin-bottom: 1rem;
+}
+
+.About-container .container .About-text p{
+    color: var(--primary-color);
+    font-size: var(--p-font-size);
+   font-family: var(--second-font-family);
+   font-weight: 400;
+    width: 35rem;
+}
+
+.About-container .container .About-text i{
+    color: var(--third-color);
+    font-size: 20px;
+    padding: 10px;
+}
+
+.About-container .container .About-word h2{
+    color: var(--primary-color);
+ font-size: var(--main-font-size);
+ font-family: var(--second-font-family);
+ font-weight: 400;
+ width: 35rem;
+ position: relative;
+ bottom:68px;
+
+
+}
+
+.About-container .container .About-button{
+    padding: 10px 15px;
+    border: 2px solid var(--third-color);
+    color: var(--third-color);
+    font-size: var(--a-font-size);
+    text-align: center;
+    border-radius: 2px;
+    font-family: var(--main-font-family);
+}
+
 
 @media (max-width:576px){
    
@@ -299,7 +403,63 @@ header{
         
     }
 
- }
+    .image-container .images{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+
+    .image-container .images img{
+        width: 30%;
+        height: 30%;
+        padding: 10px;
+       
+    }
+
+    .About-container .heading h1:after{
+        width: 25%;
+    }
+
+    .About-container .container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+       
+    }
+
+    .About-container .container .About-text h2{
+        width: 26rem;
+    }
+
+    .About-container .container .About-text i{
+        position: relative;
+        bottom: 5px;
+    }
+
+    .About-container .container .About-text p{
+        width: 27rem;
+        display: flex;
+        margin-bottom: 10px;
+        line-height: 1.5;
+        position: relative;
+        right: 10px;
+       
+    }
+
+    .About-container .container .About-word h2{
+         position: relative;
+         top: 1px; 
+        width: 26rem;
+    }
+
+    .About-container .container .About-button{
+        position: relative;
+        top: 30px;
+    }
+}
+ 
+ 
 
 
 
