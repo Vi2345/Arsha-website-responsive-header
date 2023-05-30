@@ -424,8 +424,7 @@ header{
 
 
 
-
-@media screen and (max-width:576px){
+@media screen and (max-width:600px){
    
     .navlinks {
         background-color: var(--main-color);
@@ -640,7 +639,62 @@ header{
     }
 }
  
- 
+ @media screen and (max-width:410px){
+    .About-container .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+       
+       
+    }
+
+    .About-container .container .About-text h2{
+        display: flex;
+        width: 23rem;
+        font-size: 19px;
+       
+    }
+
+    .About-container .container .About-text i{
+        position: relative;
+        bottom: 5px;
+    }
+
+    .About-container .container .About-text p{
+        width: 23rem;
+        display: flex;
+        margin-bottom: 10px;
+        line-height: 1.5;
+        position: relative;
+        right: 10px;
+        font-size: 18px;
+  
+       
+    }
+
+    .About-container .container .About-word h2{
+         position: relative;
+         top: 1px; 
+        width: 23rem;
+        font-size: 19px;
+    }
+
+    .Polices-container .sub-heading{
+        position: relative;
+        right: 25px;
+    }
+
+    .Polices-container .sub-heading h1 {
+        width: 23rem;   
+     
+    }
+
+    .Polices-container .sub-heading p{
+        width: 23rem;
+     
+    }
+ }
 
 
 
