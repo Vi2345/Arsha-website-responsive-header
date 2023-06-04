@@ -22,8 +22,8 @@
     --h1-font-size:28px;
     --main-font-size:20px;
     --sub-heading-font-size:24px;
-    --p-font-size:19px;
-    --a-font-size:19px;
+    --p-font-size:18px;
+    --a-font-size:18px;
     --main-font-family:'Josefin Sans', sans-serif;
     --second-font-family:'Roboto', sans-serif ;
 }
@@ -493,9 +493,102 @@ header{
     height: 10px;
 }
 
+.Services-container{
+    background-color: #f3f5fa;
+    margin-top: 10%;
+}
+.Services-container .inner{
+    text-align: center;
+    margin-bottom: 1rem;
+}
 
-@media screen and (max-width:600px){
-   
+.Services-container .inner h1{
+    font-size: var(--h1-font-size);
+    font-family: var(--second-font-family);
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+  
+}
+ 
+.Services-container .inner h1::after{
+    content: "";
+    width:10%;
+    height: 3px;
+    display: block;
+    margin: auto;
+    background-color: var(--main-color);
+    position: relative;
+    top: 10px;
+}
+
+ .Services-container .inner p{
+    font-size:var(--p-font-size);
+    font-family: var(--second-font-family);
+    color: var(--primary-color);
+    font-weight:400;
+    padding: 10px 15px;
+ }
+
+ .Services-container .card-container{
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 1rem;
+    margin-top: 5%;
+ 
+ }
+
+ .Services-container .card-container .card-text{
+    position: relative;
+    background-color: var(--secondary-color);
+    width: 17rem;
+    padding: 10px 15px;
+    box-shadow: 0px 10px 20px var(--primary-color);
+ }
+
+ .Services-container .card-container .card-text i{
+    font-size: 45px;
+    color: var(--main-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+ }
+
+
+ .Services-container .card-container .card-text i:hover{
+    color: var(--third-color);
+ }
+ 
+ .Services-container .card-container .card-text h1{
+    font-size: var(--h1-font-size);
+    font-family: var(--second-font-family);
+    font-weight: bold;
+    color: var(--main-color);
+    margin-bottom: 10px;
+    padding: 10px 15px;
+
+ }
+
+ .Services-container .card-container .card-text h1:hover{
+    color: var(--third-color);
+ } 
+
+ .Services-container .card-container .card-text p{
+    color: var(--primary-color);
+    font-size: var(--p-font-size);
+    font-family: var(--second-font-family);
+    font-weight: 400;
+    width: 16rem;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+ 
+ }
+
+@media screen  and (max-width:768px){
+    .Home-container .Home .Home-text h2{
+        padding: 10px 15px;
+      }
     .navlinks {
         background-color: var(--main-color);
         position: absolute;
@@ -620,6 +713,7 @@ header{
         display: flex;
         width: 24rem;
         font-size: 19px;
+        padding: 10px 15px;
        
     }
 
@@ -629,13 +723,14 @@ header{
     }
 
     .About-container .container .About-text p{
-        width: 23rem;
+        width: 25rem;
         display: flex;
         margin-bottom: 10px;
         line-height: 1.5;
         position: relative;
         right: 10px;
         font-size: 18px;
+        padding: 10px 15px;
   
        
     }
@@ -645,16 +740,15 @@ header{
          top: 1px; 
         width: 24rem;
         font-size: 19px;
+        padding:10px 15px;
     }
+
+ 
 
     .About-container .container .About-button{
         position: relative;
         top: 30px;
-    }
-
-    .About-container .container .About-button{
-        position: relative;
-        top: 30px;
+        left: 10px;
     }
 
     
@@ -680,9 +774,10 @@ header{
     }
 
     .Polices-container .order-container .order #accordion{
-      width: 400px;
+      width: 410px;
       position: relative;
       top: 60px;
+      right: 10px;
       
       
      
@@ -690,8 +785,8 @@ header{
      
    .Polices-container .order-container .order #accordion li label{
     display: flex;
-    align-items: center;
-    padding: 20px 20px;
+    padding: 10px 15px;
+    font-size: 19px;
    }
 
    .Polices-container .order-container .order #accordion li label i{
@@ -701,11 +796,13 @@ header{
 
     .Polices-container .order-container .order #accordion li .word p{
         display: flex;
-        width: 25rem;
+        width: 24rem;
+        padding: 10px 15px;
+        font-size: 17px;
     }
 
     .Polices-container .order-container .vector img{
-        width: 24rem;
+        width: 25rem;
     }
 
     .ratio-container .progress{
@@ -725,6 +822,22 @@ header{
     font-size: 35px;
      width: 25rem;
     
+}
+
+.Services-container .card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.Services-container .card-container .card-text{
+    width:23rem;
+}
+
+.Services-container .card-container .card-text p{
+    width: 23rem;
+    padding: 10px 15px;
 }
 
 
@@ -802,6 +915,7 @@ header{
         width: 350px;
         position: relative;
         top: 60px;
+        left: 2px;
      
         
         
@@ -888,6 +1002,22 @@ header{
     background-color: var(--main-color);
     width: 100%;
     height: 10px;
+}
+
+
+
+.Services-container .card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Services-container .card-container .card-text{
+    width: 20rem;
+}
+
+.Services-container .card-container .card-text p{
+    width: 19rem;
+    padding: 10px 15px;
 }
 
  }
