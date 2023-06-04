@@ -678,7 +678,7 @@ header{
         font-size: 35px;
         width:22rem;
         position: relative;
-        left: 40px;
+        left: 50px;
        
     }
 
@@ -873,6 +873,10 @@ header{
 }
  
  @media only screen and (min-width:360px) and (max-width:480px){
+    .Home-container .Home .Home-text h1{
+        position: relative;
+        left: 5px;
+    }
     .Home-container .Home .Home-text h2{
       padding: 10px 15px;
     }
