@@ -755,6 +755,8 @@ header{
 
     .Polices-container .sub-heading h1 {
         width: 24rem;
+        position: relative;
+        left: 5px;
      
      
        
@@ -763,6 +765,8 @@ header{
 
     .Polices-container .sub-heading p{
         width: 24rem;
+        position: relative;
+        left: 5px;
      
     }
 
@@ -777,7 +781,7 @@ header{
       width: 410px;
       position: relative;
       top: 60px;
-      right: 10px;
+      right: 5px;
       
       
      
