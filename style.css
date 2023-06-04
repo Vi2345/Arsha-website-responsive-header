@@ -824,6 +824,18 @@ header{
     
 }
 
+.Services-container .inner h1:after{
+    content: "";
+    width:25%;
+    height: 3px;
+    display: block;
+    margin: auto;
+    background-color: var(--main-color);
+    position: relative;
+    top: 10px;
+}
+
+
 .Services-container .card-container{
     display: flex;
     flex-direction: column;
@@ -846,6 +858,17 @@ header{
  @media only screen and (min-width:360px) and (max-width:480px){
     .Home-container .Home .Home-text h2{
       padding: 10px 15px;
+    }
+
+    .About-container .heading h1:after{
+        content: "";
+        width:30%;
+        height: 3px;
+        display: block;
+        margin: auto;
+        background-color: var(--main-color);
+        position: relative;
+        top: 10px;
     }
     .About-container .container{
         display: flex;
@@ -1004,13 +1027,23 @@ header{
     height: 10px;
 }
 
-
+.Services-container .inner h1:after{
+    content: "";
+    width:30%;
+    height: 3px;
+    display: block;
+    margin: auto;
+    background-color: var(--main-color);
+    position: relative;
+    top: 10px;
+}
 
 .Services-container .card-container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .Services-container .card-container .card-text{
     width: 22rem;
 }
