@@ -2196,7 +2196,7 @@ iframe{
        align-items: center;
        text-align: center;
         position:static;
-        background-color:#f5f5dc;
+        background-color: #f0f8ff;
     }
 
     .dropdown ul li{
@@ -2629,7 +2629,7 @@ iframe{
 
  .reviews-container .plot .review-button{
     position: relative;
-    bottom: 55px;
+    bottom: 53px;
     left: 120px;
  }
 
