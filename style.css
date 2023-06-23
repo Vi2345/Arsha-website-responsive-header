@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +13,6 @@
     background-color:#f5f5dc;
     color:#ee82ee;
 }
-
 :root{
     --main-color:#37517e;
     --primary-color:#000000;
@@ -22,10 +21,11 @@
     --h1-font-size:28px;
     --main-font-size:20px;
     --sub-heading-font-size:24px;
-    --p-font-size:18px;
-    --a-font-size:18px;
-    --main-font-family:'Josefin Sans', sans-serif;
-    --second-font-family:"Open Sans", sans-serif;
+    --p-font-size:17px;
+    --a-font-size:17px;
+    --main-font-family:'Jost', sans-serif;
+    --second-font-family:'Open Sans', sans-serif;
+
 }
 
 
@@ -44,6 +44,7 @@ html{
 
 body{
     overflow: hidden;
+    font-style: normal;
 }
 
 
@@ -101,7 +102,7 @@ header{
   color: var(--secondary-color);
   font-size: var(--h1-font-size);
   font-family: var(--main-font-family);
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 2px;
 }
 
@@ -123,8 +124,8 @@ header{
 .navlinks a{
     color:var(--secondary-color);
     font-family: var(--second-font-family);
-    letter-spacing: 2px;
-    font-size: var(--a-font-size);
+    font-weight: 400;
+    font-size:16px;
    
 }
 
@@ -242,7 +243,7 @@ header{
 .Home-container .Home .Home-text h2{
     font-size: var(--sub-heading-font-size);
     font-family:var(--main-font-family);
-    font-weight:800;
+    font-weight:600;
     width: 38rem;
     color:#ffffff99;
     margin-bottom: 2rem;
@@ -383,15 +384,15 @@ header{
  font-weight: 400;
  width: 35rem;
  position: relative;
- bottom:35px;
- right: 30px;
+ bottom:28px;
+ right: 45px;
  padding: 10px 15px;
 
 
 }
 
 .About-container .container .About-button{
-    padding: 10px 15px;
+    padding: 10px 25px;
     border: 2px solid var(--third-color);
     color: var(--third-color);
     font-size: var(--a-font-size);
@@ -406,6 +407,7 @@ header{
 .Polices-container{
     background-color:#f3f5fa;
     margin-top: 15%;
+    min-height: 40rem;
 }
 
 .Polices-container .sub-heading{
@@ -416,21 +418,25 @@ header{
 }
 
 .Polices-container .sub-heading h1{
-    font-size: 30px;
+    font-size: 35px;
+    font-weight: 400;
     color:var(--main-color);
     margin-bottom: 1rem;
-    font-family: var(--second-font-family);
+    font-family: var(--main-font-family);
   
 }
 .Polices-container .sub-heading span{
     color:#100655c7;
-    font-weight: bold;
+    font-size: 35px;
+    font-weight: 800;
     font-family: var(--second-font-family);
 }
 .Polices-container .sub-heading p{
     font-size: var(--p-font-size);
+    font-weight: 300;
     font-family: var(--second-font-family);
     color: var(--primary-color);
+    width: 40rem;
     margin-bottom: 1rem;
 }
 .Polices-container .order-container{
@@ -438,43 +444,55 @@ header{
     grid-template-columns: auto auto;
     align-items: center;
     gap: 1.5rem;
+    position: relative;
+    top: 20px;
+
 }
 .Polices-container .order-container .order #accordion{
-    margin-top: 10px;
+    margin-top: 15px;
     width:600px;
 }
 
  .Polices-container .order-container .order #accordion li{
     width: 100%;
-    margin-bottom: 10px;
+    padding: 5px;
     background-color:var(--secondary-color);
-    padding: 10px;
-    border-radius: 4px;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .Polices-container .order-container .order #accordion li label{
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 0.5rem;
-    font-size:var(--main-font-size);
-    font-family: var(--second-font-family);
-    color: var(--third-color);
+    display:block;
+    align-items:center;
+    text-align: left;
+    padding: 10px 15px;
+    font-size:17px;
+    font-family:'poppins', sans-serif; ;
+    color: var(--primary-color);
+    font-weight:bold;
     
+}
+
+.Polices-container .order-container .order #accordion li label:hover{
+    color: var(--third-color);
 }
 
 .Polices-container .order-container .order #accordion li .word p{
     font-size: 16px;
     font-family: var(--second-font-family);
     font-weight: 400;
-    padding: 10px 10px;
+    padding: 10px 15px;
+    width: 35rem;
 }
 
 .Polices-container .order-container .order #accordion li label i{
-    font-size:25px;
+    font-size:16px;
     color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+    bottom: 18px;
     
   
    
@@ -517,7 +535,7 @@ header{
 
 .ratio-container .progress .progress-img img{
     width: 30rem;
-    height: 22rem;
+    height: 28rem;
     padding: 10px 15px;
 
 }
@@ -525,16 +543,18 @@ header{
 .ratio-container .progress .progress-text h1{
     font-size: 35px;
     width: 35rem;
+    line-height: 1.2;
     font-family: var(--second-font-family);
-    line-height: 1.5;
     color: var(--main-color);
     margin-bottom: 1rem;
 }
 
 .ratio-container .progress .progress-text p{
     font-size:var(--p-font-size);
-    font-family: var(--main-font-family);
+    font-family: var(--second-font-family);
     color: var(--primary-color);
+    font-weight: 300;
+    font-style: italic;
     line-height: 1.5;
     margin-bottom: 1rem;
 }
@@ -549,6 +569,7 @@ header{
     font-size:15px;
     font-family: var(--second-font-family);
     font-weight: bold;
+    font-style: normal;
     letter-spacing: 1px;
     margin:0 0 10px;
 
@@ -628,6 +649,12 @@ header{
     box-shadow: 0px 10px 20px var(--primary-color);
  }
 
+ .Services-container .card-container .card-text:hover{
+    transform: translateY(-10px);
+    transition: all 0.5s ease;
+    cursor: pointer;
+ }
+
  .Services-container .card-container .card-text i{
     font-size: 45px;
     color: var(--main-color);
@@ -643,10 +670,9 @@ header{
  
  .Services-container .card-container .card-text h1{
     font-size: var(--h1-font-size);
-    font-family: var(--second-font-family);
-    font-weight: bold;
+    font-family: var(--main-font-family);
+    font-weight:500;
     color: var(--main-color);
-    margin-bottom: 10px;
     padding: 10px 15px;
 
  }
@@ -661,7 +687,6 @@ header{
     font-family: var(--second-font-family);
     font-weight: 400;
     width: 16rem;
-    margin-bottom: 10px;
     padding: 10px 15px;
  
  }
@@ -686,6 +711,7 @@ header{
 .call-to-action-container .box-container .box h2{
     font-size: var(--sub-heading-font-size);
     font-family: var(--main-font-family);
+    font-weight: bold;
     color: var(--secondary-color);
     text-transform: uppercase;
     padding: 10px 15px;
@@ -799,6 +825,7 @@ header{
     padding-bottom: 15px;
 
 }
+
 
 .Team-container{
     background-color:  #f0f8ff9c;
@@ -1014,7 +1041,7 @@ header{
 
  .Pricing-container .card-1 .card-2 h1{
     font-size: var(--h1-font-size);
-    font-family: var(--second-font-family);
+    font-family: var(--main-font-family);
     color: var(--main-color);
     margin-bottom: 1rem;
   
@@ -1022,7 +1049,7 @@ header{
 
  .Pricing-container .card-1 .card-2  h2{
     font-size: var(--main-font-size);
-    font-family: var(--second-font-family);
+    font-family: var(--main-font-family);
     color:var(--main-color);
     font-size: 45px;
     position: relative;
@@ -1032,7 +1059,7 @@ header{
 }
 .Pricing-container .card-1 .card-2 h3{
     font-size: var(--sub-heading-font-size);
-    font-family: var(--second-font-family);
+    font-family: var(--main-font-family);
     color: var(--third-color);
     position: relative;
     bottom: 35px;
@@ -1152,14 +1179,15 @@ header{
  .FAQ-container .assign #accordion-1 li{
      width: 100%;
      background-color:var(--secondary-color);
-     padding: 10px 15px;
-     border-radius: 4px ;
+     border-radius: 5px ;
+     overflow: hidden;
      
  }
  
  .FAQ-container .assign #accordion-1 li label{
-     font-size:var(--main-font-size);
-     font-family: var(--second-font-family);
+     font-size:18px;
+     font-weight: 600;
+     font-family:'poppins', sans-serif;
      color: var(--main-color);
      
  }
@@ -1185,7 +1213,7 @@ header{
  }
 
  .FAQ-container .assign #accordion-1 li label .bar{
-    padding: 5px;
+    padding: 5px 10px;
     color: var(--third-color);
  }
  .FAQ-container .assign #accordion-1 li label .line{
@@ -1282,7 +1310,7 @@ header{
     font-size: 35px;
     padding: 10px 15px;
     border-radius: 50%;
-    color: var(--third-color);
+    color:var(--third-color);
     background-color:  #f0f8ffde;
   
 }
@@ -1294,6 +1322,7 @@ header{
     position: relative;
     bottom: 55px;
     left: 70px;
+    
     
 
 }
@@ -1448,16 +1477,17 @@ width: 100%;
 }
 
 .footer .sub-container .sub-plot h2{
-    font-size: 26px;
+    font-size: 27px;
+    font-weight: 600;
     font-family: var(--main-font-family);
     color: var(--main-color);
     position: relative;
-    bottom: 10px;
+    bottom: 12px;
 }
 .footer .sub-container .sub-plot p{
     font-size: 17px;
     width: 11rem;
-    font-family: var(--second-font-family);
+    font-family: var(--main-font-family);
 }
 
 
@@ -1469,13 +1499,13 @@ width: 100%;
 .footer .sub-container .sub-align .sub-1 h3{
     color: var(--primary-color);
     font-size: 16px;
-    font-family: var(--second-font-family);
+    font-family: var(--main-font-family);
     font-weight: bold;
 }
 .footer .sub-container .sub-align .sub-1 p{
     font-size: 16px;
     color:var(--primary-color);
-    font-family: var(--second-font-family);
+    font-family: var(--main-font-family);
 }
 
 .footer .sub-container .sub-align .sub-2 {
@@ -1485,18 +1515,18 @@ width: 100%;
 .footer .sub-container .sub-align .sub-2 h3{
     color: var(--primary-color);
     font-size: 16px;
-    font-family: var(--second-font-family);
+    font-family: var(--main-font-family);
     font-weight: bold;
 }
 
 .footer .sub-container .sub-align .sub-2 p{
     font-size: 16px;
     color:var(--primary-color);
-    font-family: var(--second-font-family);
+    font-family: var(--main-font-family);
 }
 
 .footer .sub-container .sub h2{
-    font-size: 20px;
+    font-size: 19px;
     font-family: var(--main-font-family);
     color: var(--main-color);
 }
@@ -1558,7 +1588,8 @@ width: 100%;
   }
 
   .credit .column span{
-    font-weight: 500;
+    font-weight:bold;
+    font-family: var(--main-font-family);
     color: var(--secondary-color);
   }
 
@@ -1602,31 +1633,31 @@ width: 100%;
 
     .navlinks li a {
         color: var(--primary-color);
-        font-weight:lighter;
+        font-weight:400;
         font-size: 18px;
         padding: 5px;
 
     }
 
-    
+  .navlinks .pin{
+    display: inline-block;
+    position: relative;
+    left: 70%;
+  }
 
+  .navlinks .set{
+    display: inline-block;
+    position: relative;
+    left: 40%;
+  }
     .navlinks li:hover {
         color:var(--third-color);
     }
-
-    .navlinks .pin{
-        display: none;
-    }
-
-    .navlinks .set{
-        display: none;
-    }
+    
    .navlinks li:hover .dropdown{
          display: block;
-         align-items: center;
-         text-align: center;
-          position:static;
-        background-color:#f0f8ff;
+         position:static;
+        background-color:var(--secondary-color);
     }
 
     .dropdown ul li{
@@ -1662,10 +1693,10 @@ width: 100%;
     }
 
     .Home-container .Home{
-        min-height: 50rem;
+        min-height: 40rem;
         display: flex;
         flex-direction: column-reverse;
-        gap: 3.5rem;
+        gap: 1.5rem;
         align-items: center;
         justify-content: center;
        
@@ -2075,7 +2106,7 @@ iframe{
     height: 255px;
     position: relative;
     right: 5px;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 .reviews-container .plot input{
@@ -2181,8 +2212,9 @@ iframe{
 
     .navlinks li a {
         color: var(--primary-color);
-        font-weight:lighter;
-        font-size: 16px;  
+        font-weight:400;
+        font-size: 16px; 
+        padding: 5px; 
 
     }
 
@@ -2193,24 +2225,27 @@ iframe{
     }
    .navlinks li:hover .dropdown{
        display: block;
-       align-items: center;
-       text-align: center;
         position:static;
-        background-color: #f0f8ff;
+        background-color:var(--secondary-color);
     }
 
     .dropdown ul li{
         padding:0px;
         width: 100%;
     }
+    
+
     .navlinks .pin{
-        display: none;
-    }
-
-    .navlinks .set{
-        display: none;
-    }
-
+        display: inline-block;
+        position: relative;
+        left: 70%;
+      }
+    
+      .navlinks .set{
+        display: inline-block;
+        position: relative;
+        left: 40%;
+      }
    .dropdown li:hover .dropdown-menu{
     display:block;
     position: static;
@@ -2239,7 +2274,7 @@ iframe{
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        gap: 3.5rem;
+        gap: 1.5rem;
         justify-content: center;
     }
 
@@ -2612,7 +2647,7 @@ iframe{
     right: 10px;
     padding: 10px 15px;
     width: 340px;
-    height: 255px;
+    height: 245px;
    
 }
  .Contact-container .sector .outer{
@@ -2694,7 +2729,7 @@ iframe{
 .credit .column p{
     font-size: 14px;
     padding: 5px;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
  }
